@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "dist/main.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "dist/main.js"
+      }
+    ],
+    "env": {
+      "DATABASE_URL": "postgres://default:cdp0sfyk9GWN@ep-solitary-haze-a2tgyh3z-pooler.eu-central-1.aws.neon.tech:5432/verceldb?sslmode=require"
+    }
+  }
+  
