@@ -1,5 +1,9 @@
 {
     "version": 2,
+    "scripts": {
+        "build": "prisma generate && nest build",
+        "start": "node dist/main.js"
+      },
     "builds": [
         {
             "src": "src/main.ts",
